@@ -1,0 +1,25 @@
+.header {
+    text-align: center;
+    font-size: 16px;
+    margin: 1px 1px;
+    padding: 3px;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+}
+
+#buttons button {
+  width: 100%;
+}
+
+#winstreak {
+  font-size: 100px;
+  color: red;
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: white;
+  background-color: #0F0;
+}
