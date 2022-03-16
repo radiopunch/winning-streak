@@ -7,7 +7,7 @@ function update(){
   document.getElementById("winstreak").innerText = winstreak.toString()+"連勝";
   lap = Math.floor(winstreak/7)+1
   num = winstreak%7+1
-  document.getElementById("detail").innerText = lap.toString()+"週目"+num.toString()+"戦目";
+  document.getElementById("detail").innerText = lap.toString()+"周目"+num.toString()+"戦目";
 }
 
 function increase() {
