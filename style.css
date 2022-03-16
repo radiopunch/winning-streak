@@ -19,7 +19,7 @@
 #winstreak {
   font-size: 100px;
   color: red;
-  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
   background-color: #0F0;
 }
