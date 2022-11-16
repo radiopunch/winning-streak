@@ -12,16 +12,22 @@ function update(){
 
 function increase() {
   winstreak = winstreak+1;
+  const elem = document.activeElement;
+  elem.blur();
   update();
 }
 
 function decrease() {
   winstreak = winstreak-1;
+  const elem = document.activeElement;
+  elem.blur();
   update();
 }
 
 function reset() {
   winstreak = 0;
+  const elem = document.activeElement;
+  elem.blur();
   update();
 }
 
