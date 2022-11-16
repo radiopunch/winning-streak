@@ -43,7 +43,25 @@ function keypress_event(e) {
 	}
 	return false; 
 }
+
+function focused(){
+  document.getElementById('comment').textContent = 'キーボード操作もできます';
+  document.getElementById('comment').style.color = '#000000';
+  document.getElementById('comment').style.fontWeight="normal";
+}
+function blurred(){
+  document.getElementById('comment').textContent = 'キーボード操作をするにはウィンドウをアクティブにしてください';
+  document.getElementById('comment').style.color = '#ff0000';
+  document.getElementById('comment').style.fontWeight="bold";
+}
+
 document.getElementById("increase").addEventListener("click", increase);
 document.getElementById("decrease").addEventListener("click", decrease);
 document.getElementById("reset").addEventListener("click", reset);
 document.addEventListener('keyup', keypress_event);
+
+// ウィンドウをフォーカスしたら指定した関数を実行
+window.addEventListener('focus', focused);
+
+// ウィンドウからフォーカスが外れたら指定した関数を実行
+window.addEventListener('blur', blurred);
