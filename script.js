@@ -25,6 +25,25 @@ function reset() {
   update();
 }
 
+function keypress_event(e) {
+	if(e.code === 'ArrowRight'){
+    increase();
+	}
+	if(e.key === 'ArrowLeft'){
+    decrease();
+	}
+	if(e.code === 'Enter'){
+    increase();
+	}
+	if(e.key === 'Backspace'){
+    decrease();
+	}
+	if(e.key === 'Escape'){
+    reset();
+	}
+	return false; 
+}
 document.getElementById("increase").addEventListener("click", increase);
 document.getElementById("decrease").addEventListener("click", decrease);
 document.getElementById("reset").addEventListener("click", reset);
+document.addEventListener('keyup', keypress_event);
